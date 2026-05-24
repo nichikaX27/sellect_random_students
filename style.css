@@ -1,4 +1,3 @@
-/* 全体のリセットと背景設定 */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f0f4f8;
@@ -9,7 +8,6 @@ body {
     margin: 0;
 }
 
-/* 中央のカードコンテナ */
 .container {
     background-color: #ffffff;
     padding: 30px 40px;
@@ -26,7 +24,6 @@ h1 {
     margin-bottom: 24px;
 }
 
-/* 入力エリア */
 .input-group {
     margin-bottom: 20px;
     display: flex;
@@ -54,7 +51,6 @@ input[type="number"]:focus {
     border-color: #627d98;
 }
 
-/* ボタンのデザイン */
 button {
     background-color: #102a43;
     color: white;
@@ -76,7 +72,6 @@ button:active {
     transform: scale(0.98);
 }
 
-/* 結果表示エリア */
 .result-container {
     margin-top: 30px;
     height: 160px;
@@ -92,13 +87,11 @@ button:active {
     transition: color 0.2s;
 }
 
-/* 数字が決まったときの強調スタイル */
 #result-display.selected {
     color: #d32f2f;
     animation: pop 0.3s ease-out;
 }
 
-/* 決定時のポンッと弾けるアニメーション */
 @keyframes pop {
     0% { transform: scale(0.8); }
     50% { transform: scale(1.1); }
