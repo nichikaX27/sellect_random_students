@@ -1,0 +1,106 @@
+/* 全体のリセットと背景設定 */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 中央のカードコンテナ */
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    color: #334e68;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+/* 入力エリア */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    color: #486581;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 80px;
+    padding: 8px;
+    font-size: 18px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border-color: #627d98;
+}
+
+/* ボタンのデザイン */
+button {
+    background-color: #102a43;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #243e56;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* 結果表示エリア */
+.result-container {
+    margin-top: 30px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result-display {
+    font-size: 96px;
+    font-weight: bold;
+    color: #627d98;
+    transition: color 0.2s;
+}
+
+/* 数字が決まったときの強調スタイル */
+#result-display.selected {
+    color: #d32f2f;
+    animation: pop 0.3s ease-out;
+}
+
+/* 決定時のポンッと弾けるアニメーション */
+@keyframes pop {
+    0% { transform: scale(0.8); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1.0); }
+}
